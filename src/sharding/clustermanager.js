@@ -72,7 +72,7 @@ class ClusterManager extends EventEmitter {
         }
 
         if (this.token) {
-            this.eris = new Eris(token);
+            this.eris = new CLASS(token, options);
             this.launch(false);
         } else {
             throw new Error("No token provided");
