@@ -1,51 +1,14 @@
 {
-  "_from": "git+https://github.com/discordware/eris-sharder.git",
-  "_id": "eris-sharder@1.10.0",
-  "_inBundle": false,
-  "_integrity": "",
-  "_location": "/eris-sharder",
-  "_phantomChildren": {
-    "tweetnacl": "1.0.3",
-    "ws": "7.4.5"
-  },
-  "_requested": {
-    "type": "git",
-    "raw": "https://github.com/discordware/eris-sharder",
-    "rawSpec": "https://github.com/discordware/eris-sharder",
-    "saveSpec": "git+https://github.com/discordware/eris-sharder.git",
-    "fetchSpec": "https://github.com/discordware/eris-sharder.git",
-    "gitCommittish": null
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "git+https://github.com/discordware/eris-sharder.git#94bc01d3c2561c7837f31c82d8248b55523c8b6b",
-  "_spec": "https://github.com/discordware/eris-sharder",
-  "_where": "C:\\Users\\MI PC\\Desktop\\Mis Cosas\\zenitsu-eris",
   "author": {
-    "name": "John Smith"
+    "name": "lil_marcrock22"
   },
-  "bugs": {
-    "url": "https://github.com/Discord-Sharders/eris-sharder/issues"
-  },
-  "bundleDependencies": false,
   "dependencies": {
     "asciiart-logo": "^0.2.6",
     "colors": "^1.1.2",
     "eris": "^0.14.0",
     "fancy-log": "^1.3.0"
   },
-  "deprecated": false,
   "description": "A sharder for the discord eris library",
-  "devDependencies": {
-    "dotenv": "^8.0.0",
-    "tui-jsdoc-template": "^1.2.2"
-  },
-  "engines": {
-    "node": ">=8.0.0"
-  },
-  "homepage": "https://github.com/Discord-Sharders/eris-sharder#readme",
   "keywords": [
     "eris",
     "sharder",
@@ -54,13 +17,10 @@
   ],
   "license": "MIT",
   "main": "./src/index.js",
-  "name": "eris-sharder",
+  "name": "@lil_marcrock22/eris-sharder",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Discord-Sharders/eris-sharder.git"
+    "url": "git+https://github.com/MARCROCK22/eris-sharder.git"
   },
-  "scripts": {
-    "test": "node ./tests/test.js"
-  },
-  "version": "1.10.0"
+  "version": "0.0.1"
 }
