@@ -6,7 +6,7 @@ interface OPTIONS {
         shard: { id: string; token: string };
         cluster: { id: string, token: string };
     };
-    clientOptions: eris.ClientOptions;
+    clientOptions?: eris.ClientOptions;
     clusters?: number;
     clusterTimeout?: number;
     shards?: number;
@@ -21,7 +21,6 @@ interface OPTIONS {
 declare namespace Sharder {
 
     export class Master {
-
 
         constructor(token: string, path: string, options: OPTIONS, CLASS: any);
         CLASS: any;
@@ -69,13 +68,16 @@ declare namespace Sharder {
         fetchInfo(start: any, type: any, value: any): void;
         broadcast(start: any, message: any): void;
         sendTo(cluster: number | string, message: any): void;
+
     };
 
     class Base {
+
         constructor(setup: { bot: any, clusterID: number; ipc: any });
         restartCluster(clusterID: number): void;
+
     };
 
-}
+};
 
 export = Sharder;
