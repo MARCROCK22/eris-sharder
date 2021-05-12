@@ -1,6 +1,22 @@
 import Eris from "eris";
 
-interface OPTIONS { }
+interface OPTIONS {
+    stats?: boolean;
+    webhooks?: {
+        shard: { id: string; token: string };
+        cluster: { id: string, token: string };
+    };
+    clientOptions: eris.ClientOptions;
+    clusters?: number;
+    clusterTimeout?: number;
+    shards?: number;
+    firstShardID?: number;
+    lastShardID?: number;
+    debug?: boolean;
+    statsInterval?: number;
+    name?: string;
+    guildsPerShard?: number;
+}
 
 declare namespace Sharder {
 
