@@ -1,5 +1,32 @@
 ## How to use
 
+### MyBotClass.ts
+
+```ts
+/* Example */
+class MyBot {
+
+    commands: Map<string, CommandClass>;
+
+    async connect () {
+        await this.init();
+        return super.connect();//@lil_macrock22/eris-sharder use .connect() to start the bot.
+    }
+
+    async init(): Promise<true> {
+        await this.loadEvents();
+        await this.loadCommands();
+        await this.loadImages();
+        this.commands = new Map();
+        return true;
+    }
+
+};
+
+export default MyBot;
+/* Example */
+```
+
 ### index.ts
 
 ```ts
